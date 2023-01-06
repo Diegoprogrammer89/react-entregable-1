@@ -3,13 +3,13 @@ import gender from "../assets/icon/gender.png";
 import email from "../assets/icon/email.png";
 import phone from "../assets/icon/phone.png";
 import location from "../assets/icon/pin.png";
-import ramdom from "../assets/icon/shuffle.png";
+
+
+
 
 
 const AllData = ({ data }) => {
-  
-    
-    
+
     
     return (
 
@@ -22,7 +22,8 @@ const AllData = ({ data }) => {
             <h4><img className="icon" src={phone} alt="" /> {data.phone}</h4>
             <h4><img className="icon" src={location} alt="" /> {data.location.city} {data.location.state} {data.location.country}</h4>
       </div>
-            <button className="button" ><img className="icon_2" src={ramdom} alt="" /></button>
+           
+            
     </article>
 
 
