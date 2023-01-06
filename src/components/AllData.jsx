@@ -1,4 +1,9 @@
 import React from "react";
+import gender from "../assets/icon/gender.png";
+import email from "../assets/icon/email.png";
+import phone from "../assets/icon/phone.png";
+import location from "../assets/icon/pin.png";
+import ramdom from "../assets/icon/shuffle.png";
 
 
 const AllData = ({ data }) => {
@@ -8,16 +13,16 @@ const AllData = ({ data }) => {
     
     return (
 
-    <article className="phater" >
-       <div>
-             <h1>{data.name.title} {data.name.first} {data.name.last}</h1>
-            <img src={data.picture.medium} alt="" />
-             <h3> <img src="" alt="" /> {data.gender}</h3>
-             <h3><img src="" alt="" /> {data.email}</h3>
-            <h3><span>telefono:</span> {data.phone}</h3>
-            <h3><span>ubicacion:</span>  {data.location.city} {data.location.state} {data.location.country}</h3>
+    <article className="all" >
+       <div className="phater" >
+             <h2>{data.name.title} {data.name.first} {data.name.last}</h2>
+            <img className="photo" src={data.picture.medium} alt="" />
+             <h4> <img className="icon" src={gender} alt="" /> {data.gender}</h4>
+             <h4><img className="icon" src={email} alt="" /> {data.email}</h4>
+            <h4><img className="icon" src={phone} alt="" /> {data.phone}</h4>
+            <h4><img className="icon" src={location} alt="" /> {data.location.city} {data.location.state} {data.location.country}</h4>
       </div>
-            <button>cambio</button>
+            <button className="button" ><img className="icon_2" src={ramdom} alt="" /></button>
     </article>
 
 

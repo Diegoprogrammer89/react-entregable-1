@@ -5,8 +5,14 @@ import info from "./data/users.json"
 
 function App() {
 
-  const [data, setData] = useState(info[7])
-console.log(data);
+  const [data, setData] = useState(info[4])
+
+  useEffect(() => {
+    fetch( )
+
+  },[])
+
+
   return (
     <div className="App">
       <AllData data={data} />
