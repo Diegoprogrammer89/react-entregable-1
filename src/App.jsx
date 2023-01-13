@@ -26,6 +26,7 @@ function App() {
       <AllData data={data} />
       <button  className="button" onClick={()=>setData(info[getRandomNum(info.length)])}  
       ><img className="icon_2" src={random} alt="" /></button>
+      <button>hola</button>
      
     </div>
   );
